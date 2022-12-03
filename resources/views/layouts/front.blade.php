@@ -138,7 +138,8 @@
 								<ul>
 									@if(!Auth::guard('web')->check())
 									<li class="login">
-										<a href="{{ route('user.login') }}" class="sign-log">
+										{{-- <a href="{{ route('user.login') }}" class="sign-log"> --}}
+										<a href="#" class="sign-log">
 											<div class="links">
 												<span class="sign-in">{{ $langg->lang12 }}</span> <span>|</span>
 												<span class="join">{{ $langg->lang13 }}</span>
@@ -777,7 +778,8 @@
 				        <div class="login-area">
 				          <div class="login-form signin-form">
 				                @include('includes.admin.form-login')
-				            <form class="mloginform" action="{{ route('user.login.submit') }}" method="POST">
+				            {{-- <form class="mloginform" action="{{ route('user.login.submit') }}" method="POST"> --}}
+				            <form class="mloginform" action="#" method="POST">
 				              {{ csrf_field() }}
 				              <div class="form-input">
 				                <input type="email" name="email" placeholder="{{ $langg->lang173 }}" required="">
@@ -832,7 +834,8 @@
                 <div class="login-area signup-area">
                     <div class="login-form signup-form">
                        @include('includes.admin.form-login')
-                        <form class="mregisterform" action="{{route('user-register-submit')}}" method="POST">
+                        {{-- <form class="mregisterform" action="{{route('user-register-submit')}}" method="POST"> --}}
+                        <form class="mregisterform" action="#" method="POST">
                           {{ csrf_field() }}
 
                           <div class="row">
