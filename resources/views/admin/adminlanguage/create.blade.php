@@ -1,6 +1,6 @@
 @extends('layouts.admin')
 
-@section('styles')
+@section('styles') 
 
 <style type="text/css">
   
