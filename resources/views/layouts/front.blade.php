@@ -181,6 +181,19 @@
 										<li>
                         				@if(Auth::check())
 	                        				@if(Auth::guard('web')->user()->is_vendor == 2)
+	                        					<a href="#" class="sell-btn">{{ $langg->lang220 }}</a>
+	                        				@else
+	                        					<a href="#" class="sell-btn">{{ $langg->lang220 }}</a>
+	                        				@endif
+										</li>
+                        				@else
+										<li>
+											<a href="#" data-toggle="modal" data-target="#" class="sell-btn">{{ $langg->lang220 }}</a>
+										</li>
+										@endif
+										{{-- <li>
+                        				@if(Auth::check())
+	                        				@if(Auth::guard('web')->user()->is_vendor == 2)
 	                        					<a href="{{ route('vendor-dashboard') }}" class="sell-btn">{{ $langg->lang220 }}</a>
 	                        				@else
 	                        					<a href="{{ route('user-package') }}" class="sell-btn">{{ $langg->lang220 }}</a>
@@ -190,7 +203,7 @@
 										<li>
 											<a href="javascript:;" data-toggle="modal" data-target="#vendor-login" class="sell-btn">{{ $langg->lang220 }}</a>
 										</li>
-										@endif
+										@endif --}}
 									@endif
 
 
